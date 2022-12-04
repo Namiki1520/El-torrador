@@ -1,0 +1,15 @@
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\bin\Debug\net5.0\server.Infra.Data.deps.json
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\bin\Debug\net5.0\server.Infra.Data.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\bin\Debug\net5.0\server.Infra.Data.pdb
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\bin\Debug\net5.0\server.Domain.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\bin\Debug\net5.0\server.Domain.pdb
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.csproj.AssemblyReference.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.AssemblyInfoInputs.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.AssemblyInfo.cs
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.csproj.CoreCompileInputs.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.csproj.CopyComplete
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\refint\server.Infra.Data.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\server.Infra.Data.pdb
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Infra.Data\obj\Debug\net5.0\ref\server.Infra.Data.dll

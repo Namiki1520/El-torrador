@@ -1,0 +1,12 @@
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\bin\Debug\net5.0\server.Domain.deps.json
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\bin\Debug\net5.0\server.Domain.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\bin\Debug\net5.0\server.Domain.pdb
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.csproj.AssemblyReference.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.AssemblyInfoInputs.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.AssemblyInfo.cs
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.csproj.CoreCompileInputs.cache
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\refint\server.Domain.dll
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\server.Domain.pdb
+E:\Trop Tech\Trop Tech módulo 03\JairoProjetoFinal\server\server.Domain\obj\Debug\net5.0\ref\server.Domain.dll

@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.NunitTests\\server.NunitTests.csproj": {}
+  },
+  "projects": {
+    "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\server.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\server.Domain.csproj",
+        "projectName": "server.Domain",
+        "projectPath": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\server.Domain.csproj",
+        "packagesPath": "C:\\Users\\jairo\\.nuget\\packages\\",
+        "outputPath": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jairo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.NunitTests\\server.NunitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.NunitTests\\server.NunitTests.csproj",
+        "projectName": "server.NunitTests",
+        "projectPath": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.NunitTests\\server.NunitTests.csproj",
+        "packagesPath": "C:\\Users\\jairo\\.nuget\\packages\\",
+        "outputPath": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.NunitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jairo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\server.Domain.csproj": {
+                "projectPath": "E:\\Trop Tech\\Trop Tech módulo 03\\JairoProjetoFinal\\server\\server.Domain\\server.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
