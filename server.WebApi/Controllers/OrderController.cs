@@ -28,6 +28,7 @@ namespace server.WebApi.Controllers
             }
             catch (Exception e)
             {
+                var teste = new Order();
                 return BadRequest(e.Message);
             }
         }
