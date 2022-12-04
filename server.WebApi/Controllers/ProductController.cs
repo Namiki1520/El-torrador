@@ -49,7 +49,7 @@ namespace server.WebApi.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public IActionResult GetProductById(int id)
+        public IActionResult GetProductById( int id)
         {
             try
             {

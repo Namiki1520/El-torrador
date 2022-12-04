@@ -134,7 +134,53 @@ namespace server.Infra.Data.DAO
 
             return orderList;
         }
+        public Order GetOrderByID(int id)
+        {
+            var order = new Order();
 
+            using (var conexao = new SqlConnection(_connectionString))
+            {
+                conexao.Open();
+
+                using (var comando = new SqlCommand())
+                {
+                    comando.Connection = conexao;
+
+                    string sql = @"SELECT P.ID as IDPEDIDO,
+                                    C.NOME,
+                                    P.DATAPEDIDO,
+                                    P.VALORTOTAL,
+                                    P.STATUSPEDIDO
+                                    FROM PEDIDOS P 
+                                    LEFT JOIN CLIENTES C
+                                    ON C.CPF = P.CPF_CLIENTE
+                                    WHERE P.ID = @ID;";
+
+                    comando.Parameters.AddWithValue("@ID", id);
+                    comando.CommandText = sql;
+
+                    SqlDataReader leitor = comando.ExecuteReader();
+
+                    while (leitor.Read())
+                    {
+                        Order foundOrder = new Order();
+
+                        foundOrder.Id = int.Parse(leitor["IDPEDIDO"].ToString());
+                        if (leitor["NOME"].ToString() != null)
+                        {
+                            foundOrder.CustomerName = leitor["NOME"].ToString();
+                        }
+                        foundOrder.RequestDate = Convert.ToDateTime(leitor["DATAPEDIDO"].ToString());
+                        foundOrder.OrderValue = Convert.ToDouble(leitor["VALORTOTAL"].ToString());
+                        foundOrder.CurrentStatus = (Status)int.Parse(leitor["STATUSPEDIDO"].ToString());
+
+                        order = foundOrder;
+                    }
+                }
+            }
+
+            return order;
+        }
         public void UpdateOrderStatus(int id, Status status)
         {
             using (var connection = new SqlConnection(_connectionString))

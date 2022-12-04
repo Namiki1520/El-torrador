@@ -11,9 +11,8 @@ namespace server.Domain.Interfaces
     {
         void AddOrder(Order newOrder);
         void DeleteOrder(int id);
-        void UpdateOrder(Order newOrder);
         void UpdateOrderStatus(int id, Status status);
         List<Order> GetAllOrders();
-        Order GetOrder(int id);
+        Order GetOrderById(int id);
     }
 }

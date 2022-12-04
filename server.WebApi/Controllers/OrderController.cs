@@ -45,6 +45,20 @@ namespace server.WebApi.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetOrderById(int id)
+        {
+            try
+            {
+                return Ok(_orderRepository.GetOrderById(id));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
         [HttpDelete]
         [Route("{id}")]
         public IActionResult DeleteOrder(int id)
@@ -61,12 +75,11 @@ namespace server.WebApi.Controllers
         }
 
         [HttpPatch]
-        [Route("{id}")]
-        public IActionResult UpdateStatus(int id, Status status)
+        public IActionResult UpdateStatus([FromBody] Order order)
         {
             try
             {
-                _orderRepository.UpdateOrderStatus(id, status);
+                _orderRepository.UpdateOrderStatus(order.Id, order.CurrentStatus);
                 return Ok();
             }
             catch (Exception e)

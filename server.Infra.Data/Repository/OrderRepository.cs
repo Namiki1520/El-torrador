@@ -44,14 +44,10 @@ namespace server.Infra.Data.Repository
             return list;
         }
 
-        public Order GetOrder(int id)
+        public Order GetOrderById(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateOrder(Order newOrder)
-        {
-            throw new NotImplementedException();
+            var order = _orderDAO.GetOrderByID(id);
+            return order;
         }
 
         public void UpdateOrderStatus(int id, Status status)

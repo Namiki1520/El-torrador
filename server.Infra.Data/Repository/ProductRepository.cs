@@ -20,17 +20,13 @@ namespace server.Infra.Data.Repository
             _productDAO.AddNewProduct(newProduct);
         }
 
-        public void DeleteProduct(Product newProduct)
-        {
-            throw new NotImplementedException();
-        }
-
         public void EditProduct(Product newProduct)
         {
             _productDAO.EditProduct(newProduct);
         }
         public Product SearchProductById(int id)
-        {   var product = _productDAO.SearchProductById(id);
+        {   
+            var product = _productDAO.SearchProductById(id);
             return product;
         }
         public void ActiveDeactiveProduct(int id, bool active)

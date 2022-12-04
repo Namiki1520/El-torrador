@@ -9,7 +9,6 @@ namespace server.Domain.Interfaces
         void EditProduct(Product newProduct);
         void PatchInventory(Product product);
         void ActiveDeactiveProduct(int id, bool active);
-        void DeleteProduct(Product newProduct);
         List<Product> SearchProduct();
 
         Product SearchProductById(int id);
