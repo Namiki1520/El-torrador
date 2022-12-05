@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using server.Domain.Features.customer;
 using server.Domain.Features.product;
 using System;
 
@@ -191,6 +192,52 @@ namespace server.Tests
             // assert
 
             Assert.That(ex.Message, Is.EqualTo("A data de vencimento não pode ser inferior a hoje!"));
+        }
+
+        /*
+         * Quando cliente comprar uma unidade de produto 
+         * E o estoque for 10
+         * Então estoque retorna 9
+         */
+        [Test]
+        public void Quando_ClienteComprarUmaUnidadeDeProduto_E_OEstoqueForDez_Entao_DeveRetornarDez()
+        {
+            // arrange
+            var produto = new Product();
+            produto.Description = "Description";
+            produto.Price = 10;
+            produto.ExpirationDate = DateTime.Now.AddDays(11);
+            produto.QuantityInStock = 10;
+            produto.Active = true;
+
+            // act
+            produto.SubtractProduct(1);
+
+            // assert
+            Assert.AreEqual(9, produto.QuantityInStock);
+        }
+
+        /*
+         * Quando adicionar uma unidade ao estoque 
+         * E o estoque for 10
+         * Então estoque retorna 11
+         */
+        [Test]
+        public void Quando_AdicionarUmaUnidadeAoEstoque_E_EOEstoqueForDez_Entao_DeveRetornarOnze()
+        {
+            // arrange
+            var produto = new Product();
+            produto.Description = "Description";
+            produto.Price = 10;
+            produto.ExpirationDate = DateTime.Now.AddDays(11);
+            produto.QuantityInStock = 10;
+            produto.Active = true;
+
+            // act
+            produto.SumProduct(1);
+
+            // assert
+            Assert.AreEqual(11, produto.QuantityInStock);
         }
 
         /*

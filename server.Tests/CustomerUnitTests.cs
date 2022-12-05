@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using server.Domain.Features.customer;
+using server.Domain.Features.product;
 using System;
 
 namespace server.Tests
@@ -127,6 +128,37 @@ namespace server.Tests
         }
 
         /*
+         * Quando cliente comprar uma unidade de produto 
+         * o valor do produto for 10 reais
+         * Então deve ganhar 20 pontos de fidelidade
+         */
+        [Test]
+        public void Quando_ClienteComprarUmaUnidadeDeProduto_E_OValorDoProdutoForDezReais_Entao_DeveGanharVintePontosDeFidelidade()
+        {
+            // arrange
+            var produto = new Product();
+            produto.Description = "Description";
+            produto.Price = 10;
+            produto.ExpirationDate = DateTime.Now.AddDays(11);
+            produto.QuantityInStock = 1;
+            produto.Active = true;
+
+            var cliente = new Customer();
+            cliente.Name = "Tobias";
+            cliente.Cpf = "12312312312";
+            cliente.BirthDate = DateTime.Now.AddDays(1);
+            cliente.Fidelity(produto.Price);
+
+            // act
+            var PontosFidelidade = 20;
+
+
+            // assert
+
+            Assert.AreEqual(PontosFidelidade,cliente.FidelityPoints);
+        }
+
+        /*
          * Quando validar produto
          * E nome é diferente de vazio
          * E cpf é válido
@@ -149,4 +181,5 @@ namespace server.Tests
             Assert.IsTrue(ehValido);
         }
     }
+
 }
