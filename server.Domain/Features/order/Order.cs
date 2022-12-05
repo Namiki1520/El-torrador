@@ -23,15 +23,18 @@ namespace server.Domain.Features.order
 
         public Order()
         {
-            RequestDate= DateTime.Now;
+
         }
         
         public void GetOrderValue()
         {
             OrderValue = (Product.Price * Quantity);
         }
-        
 
+        public void GetRequestDate()
+        {
+            RequestDate = DateTime.Now;
+        }
 
         public bool Validate()
         {
@@ -42,6 +45,10 @@ namespace server.Domain.Features.order
             if (OrderValue < 0)
             {
                 throw new OrderException("O valor do pedido não pode ser zero ou inferior!");
+            }
+            if(CurrentStatus == Status.finished)
+            {
+                throw new OrderException("O pedido foi finalizado, não pode ser alterado!");
             }
             if (string.IsNullOrWhiteSpace(CustomerCpf) || string.IsNullOrEmpty(CustomerCpf) || CustomerCpf == "string")
             {

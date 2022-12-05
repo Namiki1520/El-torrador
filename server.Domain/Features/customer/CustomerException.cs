@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace server.Domain.Features.customer
 {
     [Serializable]
-    internal class CustomerException : Exception
+    public class CustomerException : Exception
     {
         public CustomerException()
         {

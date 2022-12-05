@@ -16,6 +16,7 @@ namespace server.Infra.Data.Repository
         public void AddOrder(Order newOrder)
         {
             newOrder.GetOrderValue();
+            newOrder.GetRequestDate();
             newOrder.Product.SubtractProduct(newOrder.Quantity);
             _productDAO.UpdateInventory(newOrder.Product.Id, newOrder.Product.QuantityInStock);
 

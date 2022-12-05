@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using server.Domain.Features.Customer;
+using server.Domain.Features.customer;
 using System;
 
 namespace server.Tests

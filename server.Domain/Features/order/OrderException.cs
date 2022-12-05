@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace server.Domain.Features.order
 {
     [Serializable]
-    internal class OrderException : Exception
+    public class OrderException : Exception
     {
         public OrderException()
         {

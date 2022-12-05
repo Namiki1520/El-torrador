@@ -1,10 +1,6 @@
 ﻿using NUnit.Framework;
-using server.Domain.Features.ProductDomain;
+using server.Domain.Features.product;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace server.Tests
 {

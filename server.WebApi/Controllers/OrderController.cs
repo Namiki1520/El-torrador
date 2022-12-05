@@ -75,11 +75,11 @@ namespace server.WebApi.Controllers
         }
 
         [HttpPatch]
-        public IActionResult UpdateStatus([FromBody] Order order)
+        public IActionResult UpdateStatus(int id, Status status)
         {
             try
             {
-                _orderRepository.UpdateOrderStatus(order.Id, order.CurrentStatus);
+                _orderRepository.UpdateOrderStatus(id, status);
                 return Ok();
             }
             catch (Exception e)
