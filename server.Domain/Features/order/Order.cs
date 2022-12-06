@@ -52,7 +52,7 @@ namespace server.Domain.Features.order
             }
             if(Quantity > Product.QuantityInStock)
             {
-                throw new OrderException("A quantidade do pedido não pode ser maior ");
+                throw new OrderException("A quantidade do pedido não pode ser maior que a quantidade do produto em estoque");
             }
             if (string.IsNullOrWhiteSpace(CustomerCpf) || string.IsNullOrEmpty(CustomerCpf) || CustomerCpf == "string")
             {

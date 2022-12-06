@@ -18,7 +18,7 @@ namespace server.Infra.Data.Repository
             newOrder.GetOrderValue();
             newOrder.GetRequestDate();
             newOrder.Product.SubtractProduct(newOrder.Quantity);
-            _productDAO.UpdateInventory(newOrder.Product.Id, newOrder.Product.QuantityInStock);
+
 
             if (newOrder.Validate())
             {
@@ -26,11 +26,12 @@ namespace server.Infra.Data.Repository
                 customer.Fidelity(newOrder.OrderValue);
                 _customerDAO.AddFidelityPoints(newOrder.CustomerCpf, customer.FidelityPoints);
                 _orderDAO.AddOrderWithCpf(newOrder);
+                _productDAO.UpdateInventory(newOrder.Product.Id, newOrder.Product.QuantityInStock);
             }
             else
             {
                 _orderDAO.AddOrderWithoutCpf(newOrder);
-
+                _productDAO.UpdateInventory(newOrder.Product.Id, newOrder.Product.QuantityInStock);
             }
         }
 
