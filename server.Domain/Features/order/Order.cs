@@ -50,6 +50,10 @@ namespace server.Domain.Features.order
             {
                 throw new OrderException("O pedido foi finalizado, não pode ser alterado!");
             }
+            if(Quantity > Product.QuantityInStock)
+            {
+                throw new OrderException("A quantidade do pedido não pode ser maior ");
+            }
             if (string.IsNullOrWhiteSpace(CustomerCpf) || string.IsNullOrEmpty(CustomerCpf) || CustomerCpf == "string")
             {
                 return false;
