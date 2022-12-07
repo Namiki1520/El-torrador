@@ -8,7 +8,7 @@ namespace server.Infra.Data.DAO
     public class CustomerDAO
     {
         private const string _connectionString = @"server=.\SQLexpress;initial catalog=CAFETERIADB;integrated security=true;";
-        
+
         public void InsertCustomer(Customer customer)
         {
             using (var connection = new SqlConnection(_connectionString))

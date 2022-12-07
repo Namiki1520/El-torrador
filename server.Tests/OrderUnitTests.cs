@@ -179,7 +179,7 @@ namespace server.Tests
         * O caminho é feliz
         */
         [Test]
-        public void CaminhoFeliz()
+            public void CaminhoFeliz()
         {
             // arrange
             var cliente = new Customer();
