@@ -54,11 +54,7 @@ namespace server.Infra.Data.Repository
 
         public void UpdateOrderStatus(int id, Status status)
         {
-            var pedido = _orderDAO.GetOrderByID(id);
-            if (pedido.Validate())
-            {
-                _orderDAO.UpdateOrderStatus(id, status);
-            }
+            _orderDAO.UpdateOrderStatus(id, status);
 
         }
     }

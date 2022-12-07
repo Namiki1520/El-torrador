@@ -9,7 +9,7 @@ namespace server.Tests
     {
         /*
          * Quando validar cliente
-         * E nome menor que três
+         * E nome menor que três caracteres
          * Então deve resultar em cliente inválido
          */
         [Test]
