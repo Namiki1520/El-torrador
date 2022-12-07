@@ -37,7 +37,12 @@ namespace server.Infra.Data.Repository
 
         public void DeleteOrder(int id)
         {
-            _orderDAO.DeleteOrder(id);
+            var pedido = _orderDAO.GetOrderByID(id);
+            if (pedido.FinishedOrder())
+            {
+                _orderDAO.DeleteOrder(id);
+            }
+
         }
 
         public List<Order> GetAllOrders()
@@ -54,8 +59,11 @@ namespace server.Infra.Data.Repository
 
         public void UpdateOrderStatus(int id, Status status)
         {
-            _orderDAO.UpdateOrderStatus(id, status);
-
+            var pedido = _orderDAO.GetOrderByID(id);
+            if (pedido.FinishedOrder())
+            {
+                _orderDAO.UpdateOrderStatus(id, status);
+            }
         }
     }
 }

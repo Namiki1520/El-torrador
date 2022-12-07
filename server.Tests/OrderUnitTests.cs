@@ -123,7 +123,7 @@ namespace server.Tests
 
             // act
 
-            OrderException ex = Assert.Throws<OrderException>(() => pedido.Validate());
+            OrderException ex = Assert.Throws<OrderException>(() => pedido.FinishedOrder());
 
 
             // assert

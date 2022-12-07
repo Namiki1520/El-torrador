@@ -25,7 +25,7 @@ namespace server.Domain.Features.order
         {
 
         }
-        
+
         public void GetOrderValue()
         {
             OrderValue = (Product.Price * Quantity);
@@ -46,11 +46,7 @@ namespace server.Domain.Features.order
             {
                 throw new OrderException("O valor do pedido não pode ser zero ou inferior!");
             }
-            if(CurrentStatus == Status.finished)
-            {
-                throw new OrderException("O pedido foi finalizado, não pode ser alterado!");
-            }
-            if(Quantity > Product.QuantityInStock)
+            if (Quantity > Product.QuantityInStock)
             {
                 throw new OrderException("A quantidade do pedido não pode ser maior que a quantidade do produto em estoque");
             }
@@ -59,7 +55,15 @@ namespace server.Domain.Features.order
                 return false;
             }
             return true;
-        }asdasd
+        }
+        public bool FinishedOrder()
+        {
+            if (CurrentStatus == Status.finished)
+            {
+                throw new OrderException("O pedido foi finalizado, não pode ser alterado!");
+            }
+            return true;
+        }
     }
     public enum Status
     {
