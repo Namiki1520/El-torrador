@@ -15,11 +15,6 @@ namespace server.Domain.Features.product
 
         }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
-
         public void SumProduct(int qtd) {
             
             this.QuantityInStock += qtd;

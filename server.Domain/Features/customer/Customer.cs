@@ -19,11 +19,6 @@ namespace server.Domain.Features.customer
             FidelityPoints += (value * 2);
         }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
-
         public bool Validate()
         {
             if(Name.Length < 3)
